@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="nav-bar" id="navbar">
+    <a href="#Home">Home</a>
+    <a href="#About">About</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Contacts">Contacts</a>
+  </div>
+
+  <div id="Home">
+    <h1 id="name">Jhoreil Dimatulac!</h1>
+    <img id="picture" src="profile-removebg-preview (1).png" alt="Profile Picture">
+    <h2 id="future">Future Cybersecurity</h2>
+  </div>
+
+  <div id="About">
+    <h3>About Me</h3>
+    <p>
+      I am 19 years old from Bacoor Cavite and a Computer Science student at Cavite State University Bacoor Campus. 
+      I love games, running, lifting weights, and programming. I'm learning HTML, CSS, JavaScript, Python, and Java. 
+      I aim to become a skilled programmer and work in cybersecurity.
+    </p>
+  </div>
+
+<div id="Projects">
+
+ <div class="portfolio-projects">
+  <div class="portfolio-card">
+  
+    <div class="project">
+      <h4>ATM Python</h4>
+      <p>A basic ATM app using Python and Tkinter that allows users to withdraw, deposit, and check balances.</p>
+      <img src="2.png" alt="ATM Python Project">
+    </div>
+
+    <div class="project">
+      <h4>Tax Calculator Python</h4>
+      <p>A simple tax calculator built with Python and Tkinter. Users can input income and tax rate to compute taxes.</p>
+      <img src="1.png" alt="Tax Calculator Project">
+    </div>
+
+    <div class="project">
+      <h4>Snake Game Python</h4>
+      <p>A classic Snake game made with Python. Move the snake, eat food, and grow your score!</p>
+      <img src="3.png" alt="Snake Game Project">
+    </div>
+
+  </div>
+</div>
+
+<div id="Skills">
+  <h3>Basic skills</h3>
+  <div class="skill-list">
+    <div class="skill-item">HTML</div>
+    <div class="skill-item">CSS</div>
+    <div class="skill-item">Python</div>
+    <div class="skill-item">Java</div>
+    <div class="skill-item">Networking</div>
+    <div class="skill-item">Computer Configuration</div>    
+  </div>
+</div>
+
+
+<div id="Contacts">
+ <div class="icon-container">
+
+  <a class="icon-link" href="mailto:jhoreiltominesdimatulac@gmail.com">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+
+  <a class="icon-link" href="https://www.facebook.com/jhoshin.kups" target="_blank">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+   <a class="icon-link" href="https://github.com/jhoreals" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+
+
+ </div>
+</div>
+
+<script>
+    function toggleMenu() {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('show');  
+    
+    document.querySelectorAll('#navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navbar').classList.remove('show');
+    });
+  });
+
+    }
+  </script>
+
+</body>        
+</html>
+
+    
