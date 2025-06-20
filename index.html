@@ -89,6 +89,22 @@
   </a>
 
 
+  <div class="binary-background"></div>
+
+<script>
+  const binaryContainer = document.querySelector('.binary-background');
+
+  for (let i = 0; i < 100; i++) {
+    const binary = document.createElement('span');
+    binary.innerText = Math.round(Math.random()) ? '0' : '1';
+    binary.style.left = Math.random() * 100 + 'vw';
+    binary.style.animationDuration = (Math.random() * 5 + 5) + 's';
+    binary.style.fontSize = (Math.random() * 10 + 12) + 'px';
+    binaryContainer.appendChild(binary);
+  }
+</script>
+
+
  </div>
 </div>
 
